@@ -1,0 +1,8 @@
+{
+  "outcome": "running",
+  "fix_type": "transient",
+  "resume_from": "build",
+  "message": "Resuming from build (transient)…",
+  "log": "projects/RevutSpin/.resume-20260930-200745.log",
+  "attempted_at_epoch": 1790791667
+}

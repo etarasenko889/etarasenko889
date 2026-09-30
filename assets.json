@@ -1,0 +1,144 @@
+{
+  "style": "flat vector cartoon with bold neon outline, glowing edges, deep navy background, crisp graphic shapes",
+  "palette": [
+    "#111522",
+    "#161B2E",
+    "#1E2440",
+    "#2AC4B5",
+    "#F2C34E",
+    "#7048C5",
+    "#E53A4F",
+    "#F7EEDB",
+    "#9AA3BF",
+    "#05070E"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every mechanical sprite declares its orientation in words (rule C.8); symmetric ones say so explicitly so nothing is mirrored by accident. Sprite prompts never argue about background colour - the pipeline cuts the background away (rule F.1b). sprite_panel_plate and sprite_link_beam are 9-sliced in their .meta, so their prompts ask for a uniform border and a flat stretchable middle. No prompt contains the app name and no sprite carries lettering of any kind (hard rule 1). The icon hero is the reactor core.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, deep navy background, crisp graphic shapes, a dark reactor control hall seen head on, concentric teal and violet energy arcs glowing across the upper third, faint hexagonal wall plating to both sides, a heavy vignette in the corners, the centre of the frame kept calm and uncluttered as a safe area for menu controls, the lower third darkened and low contrast so buttons read over it, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, deep navy background, crisp graphic shapes, the inner wall of a reactor chamber, very dark navy throughout, faint violet grid panels at the far edges and a soft teal rim light along the sides, the whole centre deliberately empty, dark and low contrast so gameplay reads on top of it, the upper third darkened so a HUD stays legible, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_arc_pip",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arc_pip.png",
+      "orientation": "side view, horizontal bar, symmetric horizontally and vertically, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single short horizontal glowing capsule segment lying on its side, rounded ends, bright core with a soft outer glow, perfectly symmetric left to right and top to bottom, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_marker",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_marker.png",
+      "orientation": "top-down, nose UP, tip at the top edge, mirroring matters",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single sharp arrowhead pointer with its tip at the TOP of the frame and its wide base at the bottom, thick dark contour, glowing inner edge, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_core",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_core.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single round energy core orb with a faceted teal and gold inner glow and a thick dark outline, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_lock_node",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_lock_node.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single hexagonal clamp node, a metallic plate with a bright glowing dot at its centre and a thick dark contour, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_link_beam",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_link_beam.png",
+      "orientation": "side view, horizontal, symmetric; 9-sliced in its .meta so the middle is stretched",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single straight horizontal energy conduit bar with flat caps at the left and right edges, exactly uniform thickness and colour along its whole length so the middle can be stretched, bright core with a soft glow, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_burst",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_burst.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single radial starburst flare with many thin rays radiating evenly from the centre in gold and teal, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_energy_cell",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_energy_cell.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single small rounded rectangular battery cell chip with a bright teal fill and a thin darker frame, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_miss_pip",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_miss_pip.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single small diamond warning pip with a crimson fill and a thick dark outline, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_reactor_badge",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_reactor_badge.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single hexagonal metal badge plate with a dark navy face, a violet bevel and a teal rim, its centre left completely flat and empty, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_panel_plate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_panel_plate.png",
+      "orientation": "front view, symmetric; 9-sliced in its .meta so the middle is stretched",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single rounded rectangular interface plate with a dark navy face, a thin bright teal border of exactly the same width on all four sides and a soft inner glow, the middle left completely flat so it can be stretched, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single pause glyph made of two thick vertical bars side by side, cream fill with a dark contour, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "orientation": "front view, pointing LEFT, mirroring matters",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single chevron arrow glyph pointing to the LEFT side of the frame, thick cream stroke with a dark contour, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_close.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single close glyph made of two thick crossed diagonal strokes forming an X, cream fill with a dark contour, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_gear",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_gear.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "flat vector cartoon with bold neon outline, glowing edges, crisp graphic shapes, one single settings gear glyph with even teeth all the way around and a round hole in the middle, cream fill with a dark contour, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    }
+  ]
+}

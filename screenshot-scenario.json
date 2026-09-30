@@ -1,0 +1,13 @@
+{
+  "notes": "tapFrac is normalised SCREEN space measured from the TOP-LEFT. Every UI tap is computed from the real RectTransform over the 1242x2688 canvas reference with the AspectRatioFitter correction applied: SafeArea fills the capture screen, but its child AspecterSA is FitInParent at aspect 1242/2688 = 0.46205 while the Unity AVD is 1080x2400 = 0.45, so the UI layer renders 1080 x 2337.4, letterboxed 31.3 px top and bottom. A UI rect at fraction v of the panel measured from its TOP therefore lands at 0.013042 + v * 0.973917 of the screen from the top. The two LOCK steps tap the open middle of the board - the control is a tap anywhere on the field, and that band carries no button, so they cannot miss. The briefing overlay also clears itself 20 s after it opens, so the run reaches gameplay even if the START RUN tap were to land badly. The run has no clock and no draining gauge, so every frame after the briefing shows live gameplay.",
+  "steps": [
+    { "wait": 2.5, "shot": "01_MenuScreen" },
+    { "tapFrac": [0.8945, 0.0674], "label": "SETTINGS", "wait": 2.0, "shot": "02_SettingsSheet" },
+    { "tapFrac": [0.8349, 0.3456], "label": "CLOSE_SETTINGS", "wait": 1.2 },
+    { "tapFrac": [0.5000, 0.7045], "label": "PLAY", "waitLoader": true, "shot": "03_Briefing" },
+    { "tapFrac": [0.5000, 0.8522], "label": "START_RUN", "wait": 3.0, "shot": "04_GameScreen" },
+    { "tapFrac": [0.5000, 0.5200], "label": "LOCK_RING", "wait": 3.0, "shot": "05_GameScreen_lock" },
+    { "tapFrac": [0.5000, 0.4500], "label": "LOCK_RING", "wait": 3.5, "shot": "06_GameScreen_channel" },
+    { "tapFrac": [0.8945, 0.0667], "label": "PAUSE", "wait": 2.2, "shot": "07_PausePop" }
+  ]
+}

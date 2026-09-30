@@ -1,0 +1,3 @@
+{"type":"call","ts":1790604481,"task":"gen-design-doc","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790605394,"task":"approve-unity","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790615418,"task":"jira-dev-notes","model":"haiku","model_id":"claude-haiku-4-5"}

@@ -1,0 +1,55 @@
+using UnityEngine;
+
+public class _0x7d2b5afa : MonoBehaviour
+{
+    public bool IsTimerEnabled;
+    public bool IsStoryEnabled;
+    public bool IsTutorialEnabled;
+    public bool IsBestScoreEnabled;
+    private void _0xe6f6ca0c()
+    {
+        {
+#if !B_LOGS
+        {
+            Debug.unityLogger.logEnabled = false;
+            Application.SetStackTraceLogType(LogType.Assert, StackTraceLogType.None);
+            Application.SetStackTraceLogType(LogType.Exception, StackTraceLogType.None);
+            Application.SetStackTraceLogType(LogType.Warning, StackTraceLogType.None);
+            Application.SetStackTraceLogType(LogType.Error, StackTraceLogType.None);
+            Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
+        }
+#endif
+        }
+
+        QualitySettings.vSyncCount = 1;
+        Application.runInBackground = true;
+    //Application.targetFrameRate = 60;
+    // Time.fixedDeltaTime = 0.03f; // USE CUSTOM PHYSICS TIME FOR OPTIMIZATION IF NEEDED
+    // Add this once at startup to silence the specific assertion
+    }
+
+    public bool IsCheckScoreEnabled;
+    public bool IsSkipSplashEnabled;
+    public bool IsLevelIncrementOnWin;
+    public bool IsLevelSelectorEnabled;
+    private void _0x6a562546()
+    {
+    }
+
+    public bool IsOnlyWinGameEndEnabled;
+    public static _0x7d2b5afa Instance;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this.gameObject.GetComponent<_0x7d2b5afa>();
+            DontDestroyOnLoad(this.gameObject);
+            this._0xe6f6ca0c();
+        }
+        else
+        {
+            this._0x6a562546();
+            Destroy(this.gameObject);
+        }
+    }
+}
